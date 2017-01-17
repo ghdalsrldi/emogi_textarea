@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Emogi textarea</title>
+    <link rel="stylesheet" href="./mervick-emojionearea/emojionearea.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <style>
+        #edit{
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="col-md-6">
+        <div id="edit" contenteditable="true" style="min-height: 34px;" class="form-control">
+
+        </div>
+        <button type="button" onclick="$.emogi_input(this)"><img src="https://item.kakaocdn.net/do/f557e4c6ccd84cf7ec9e57b2fb6a4d93617ea012db208c18f6e83b1a90a7baa7" width="40" alt=""></button>
+        <button type="button" onclick="$.emogi_input(this)"><img src="https://item.kakaocdn.net/do/d0195d9f27e6eab9548b7ce619b07c54617ea012db208c18f6e83b1a90a7baa7" width="40" alt=""></button>
+        <button type="button" onclick="$.emogi_input(this)"><img src="https://item.kakaocdn.net/do/750d7c74b9cfd1448d2690b58fe3272b617ea012db208c18f6e83b1a90a7baa7" width="40" alt=""></button>
+    </div>
+</div>
+
+<script src="./js/emogi_textarea.js"></script>
+</body>
+</html>
