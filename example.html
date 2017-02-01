@@ -17,7 +17,9 @@
 
     <style>
         #edit{
-            height: auto;
+            resize: horizontal;
+            overflow-y: auto;
+            height: 300px;
         }
     </style>
 </head>
@@ -25,8 +27,8 @@
 
 <div class="container">
     <div class="col-md-6">
-        <textarea name="contents" id="contents" cols="30" rows="10"></textarea>
-        <div id="edit" contenteditable="true" style="min-height: 34px;" class="form-control">
+        <textarea class="form-control" name="contents" id="contents" cols="30" rows="10"></textarea>
+        <div id="edit" contenteditable="true" style="min-height: 34px;" class="form-control" onkeyup="emoji.contentClone()">
 
         </div>
         <button type="button" onclick="emoji.insert(this);"><img src="https://item.kakaocdn.net/do/f557e4c6ccd84cf7ec9e57b2fb6a4d93617ea012db208c18f6e83b1a90a7baa7" width="40" alt=""></button>
